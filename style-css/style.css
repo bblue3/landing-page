@@ -44,12 +44,13 @@ nav, .right-nav , .nav-links{
 .header {
     display: flex;
     flex: 1 1 auto;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
     color: #F9FAF8;
     background-color: #1F2937;
     padding-bottom: 5%;
+    padding-top: 2%;
 }
 
 #title {
@@ -63,16 +64,26 @@ nav, .right-nav , .nav-links{
     color: white;
     background-color: #3882F6;
     border-radius: 5px;
+    
 }
 
 .header-img, .signup-card {
     
-    max-width: 95%;
+    max-width: 100%;
     min-height: 100%; 
     
-    
+      
 }
 
+h1 {
+    margin-top: 0;
+}
+
+.signup-card {
+    max-width: 95%;
+    margin-right: 20px;
+    
+}
 /* !body */
 
 h2 {
