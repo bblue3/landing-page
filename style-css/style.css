@@ -89,13 +89,13 @@ h2 {
 }
 
 .b1, .b2, .b3, .b4 {
-    padding: 30px;
+
     border: 3px solid #3882F6;
     border-radius: 8%;
     margin: auto;
-    display: block;
-    width: 150px;
-    height: 150px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
     align-items: center;
 }
 
@@ -172,5 +172,9 @@ footer {
     }
 .header-img {
     margin-top: 5%;
+}
+.b1, .b2, .b3, .b4{
+    width: 70%;
+    height: auto;
 }
 }
