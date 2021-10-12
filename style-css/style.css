@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
 }
 
@@ -50,6 +50,7 @@ nav, .right-nav , .nav-links{
     padding-right: 10%;
     color: #F9FAF8;
     background-color: #1F2937;
+    padding-bottom: 5%;
 }
 
 #title {
@@ -65,8 +66,12 @@ nav, .right-nav , .nav-links{
     border-radius: 5px;
 }
 
-.header-img {
-    min-width: 50%; 
+.header-img, .signup-card {
+    
+    max-width: 95%;
+    min-height: 100%; 
+    
+    
 }
 
 /* !body */
@@ -156,4 +161,17 @@ footer {
     text-align: center;
     color: #E5E7EB;
     font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    
+    .boxes, .header, .nav-links, .right-nav, nav, .header-logo{
+      flex-direction: column;
+      text-align: center;
+      margin: auto;
+      
+    }
+.header-img {
+    margin-top: 5%;
+}
 }
