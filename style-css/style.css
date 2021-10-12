@@ -7,6 +7,18 @@
     margin: auto;
 }
 
+/* 
+ ------ table of contents ------
+~~ !navbar
+~~ !header
+~~ !body
+~~ !quote
+~~ !calltoaction 
+~~ !footer
+~~ !mediaqueries
+--------------------------------
+*/
+
 
 /* !navbar */
 
@@ -134,7 +146,7 @@ text-align: center;
     font-weight: bolder;
 }
 
-/* !call to action */
+/* !calltoaction */
 
 .cta {
     margin: 10%;
@@ -174,7 +186,7 @@ footer h4 {
     vertical-align: middle;
 }
 
-
+/* !mediaQueries */
 @media (max-width: 900px) {
     
     .boxes, .header, .nav-links, .right-nav, nav, .header-logo{
@@ -183,29 +195,53 @@ footer h4 {
       margin: auto;
       
     }
-.header-img {
-    margin-top: 5%;
-}
-.b1, .b2, .b3, .b4{
-    width: 70%;
-    height: auto;
-}
-.cta {
-    margin: 5%;
-    padding: 15px;
+    .nav-links li{
+        margin: .2em;
+        border: 2px solid white;
+        padding: 1em 5em;
+        border-radius: 8px;
+    }
+    
+    .header-img {
+        margin-top: 5%;
+    }
+    .b1, .b2, .b3, .b4{
+        width: 70%;
+        height: auto;
+    }
+    .cta {
+        margin: 5%;
+        padding: 10px;
+        border: 3px solid red;
+    }
 
-}
+    .left-cta, .right-cta {
+        line-height: 1.2em;
+        padding-right: 5%;
+    }
+    .left-cta {
+        padding-left: 5%;
+    }
 
-.cta p {
-    line-height: 1em;
-}
+    #cth, #ctp {
+        border: 3px solid red;
+        margin:0%
+    }
+} /* end of mediaQ 900 */
 
-.nav-links li{
-    margin: .2em;
-    border: 2px solid white;
-    padding: 1em 5em;
-    border-radius: 8px;
-}
+@media (max-width: 490px) {
+    
+    .cta, .right-cta{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .left-cta {
+        padding-bottom: .2rem;
+    }
+     .cta-btn{
+        padding: .5rem 5rem;
+        
 
+    }
 }
-/* test?? */
